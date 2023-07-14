@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.walkframework.boot.test</groupId>
+    <artifactId>walk-spring-boot-test-pom</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <!-- version of walk spring boot components -->
+        <ver_mq_base>1.10</ver_mq_base>
+        <ver_mq_kafka>2.0.3</ver_mq_kafka>
+        <ver_mq_ons>1.7</ver_mq_ons>
+        <ver_starter_base>2.0.6</ver_starter_base>
+        <ver_cache_starter>1.7.8</ver_cache_starter>
+        <ver_web_starter>1.7.5</ver_web_starter>
+        <ver_ehdb_api>2.2</ver_ehdb_api>
+        <ver_ehdb>3.7.7</ver_ehdb>
+        <ver_ehdb_web>3.3.7</ver_ehdb_web>
+        <ver_walk_cache>2.0.80</ver_walk_cache>
+        <ver_walk_mock>1.1.0</ver_walk_mock>
+        <ver_walk_tracer>1.2.4</ver_walk_tracer>
+        <ver_walk_imapper>1.5.1</ver_walk_imapper>
+        <ver_walk_scheduler>2.0.3</ver_walk_scheduler>
+        <ver_walk_tracer_impl>1.6</ver_walk_tracer_impl>
+
+        <!-- version of dependencies -->
+        <dver_commons_lang>3.8.1</dver_commons_lang>
+        <dver_fastjson>1.2.60</dver_fastjson>
+        <dver_jackson>2.9.7</dver_jackson>
+        <dver_spring_data_redis>1.8.16.RELEASE</dver_spring_data_redis>
+        <dver_alibaba_druid>1.1.12</dver_alibaba_druid>
+        <dver_commons_io>2.6</dver_commons_io>
+        <dver_aspectj>1.8.13</dver_aspectj>
+        <dver_freemarker>2.3.28</dver_freemarker>
+        <dver_commons_fileupload>1.3.2</dver_commons_fileupload>
+        <dver_ons_client>1.6.0.Final</dver_ons_client>
+        <dver_mysql>5.1.46</dver_mysql>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>2.7.10</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.walkframework.boot</groupId>
+                <artifactId>walk-starter-base</artifactId>
+                <version>${ver_starter_base}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.walkframework.boot</groupId>
+                <artifactId>walk-mq-kafka-starter</artifactId>
+                <version>${ver_mq_kafka}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.walkframework.boot</groupId>
+                <artifactId>walk-mq-basse</artifactId>
+                <version>${ver_mq_base}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+
+</project>
