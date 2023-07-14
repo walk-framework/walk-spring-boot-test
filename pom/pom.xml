@@ -11,7 +11,7 @@
 
     <properties>
         <!-- version of walk spring boot components -->
-        <ver_mq_base>1.10</ver_mq_base>
+        <ver_mq_base>1.11</ver_mq_base>
         <ver_mq_kafka>2.0.3</ver_mq_kafka>
         <ver_mq_ons>1.7</ver_mq_ons>
         <ver_starter_base>2.0.6</ver_starter_base>
